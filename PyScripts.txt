@@ -1,0 +1,66 @@
+tc = input()
+
+for i in range(0,int(tc)):
+    s = input()
+    for j in range(0,len(s)):
+        if (j%2 == 0):
+            odd = s[j]
+            print(' '.join(odd),end="")
+            
+    print(' ',end="")
+    for k in range(0,len(s)):       
+        if(k%2 != 0):
+            even = s[k]
+            print(' '.join(even),end="")
+    print(' ')
+
+
+tc = input()
+od = []
+ev = []
+for i in range(0,int(tc)):
+    s = input()
+    for j in range(0,len(s)):
+        if (j%2 == 0):
+            od.append(s[j])
+
+
+------------
+n = int(input().strip())
+arr = [int(arr_temp) for arr_temp in input().strip().split(' ')]
+-------------
+
+
+n = int(input().strip())
+pb = {}
+for i in range(0,n):
+    arr = [arr_temp for arr_temp in input().strip().split(' ')]
+    for j in range(i,len(arr)):
+        pb[arr(j)].append(arr[j+1])
+print(pb)
+-----------------------------------
+
+import sys 
+
+# Read input and assemble Phone Book
+n = int(input())
+pb = {}
+for i in range(n):
+    arr = input().split(' ')
+    pb[arr[0]] = arr[1]
+#print(pb)
+
+# Process Queries
+lines = sys.stdin.readlines()#To read additional lines in console
+for i in lines:
+    name = i.strip()
+    if name in pb:
+        print(name + '=' + str( pb[name] ))
+    else:
+        print('Not found')
+---------------------------------------
+"Using main function"
+if __name__ == "__main__":
+    n = int(input().strip())
+    result = factorial(n)
+    print(result)
