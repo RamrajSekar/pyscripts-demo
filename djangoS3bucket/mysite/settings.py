@@ -92,10 +92,10 @@ STATICFILES_DIRS = [
     os.path.join(BASE_DIR, r'djangoS3bucket\mysite\static'),
 ]
 
-AWS_ACCESS_KEY_ID = "ae0-reliability-appengineplatform-u3"
-AWS_SECRET_ACCESS_KEY = "l9CXod2h+cIBCdaacZn9Plaxa9r68GXOy2Z3wrwH"
-AWS_STORAGE_BUCKET_NAME = "ae0-reliability-appengineplatform-qa-1"
-AWS_S3_ENDPOINT_URL = "https://ecsams.bnymellon.net:9021"
+AWS_ACCESS_KEY_ID = "Test"
+AWS_SECRET_ACCESS_KEY = "Test"
+AWS_STORAGE_BUCKET_NAME = "Test"
+AWS_S3_ENDPOINT_URL = "https://ecs.test.net:9021"
 
 AWS_S3_OBJECT_PARAMETERS = {
     'CacheControl': 'max-age=86400',
